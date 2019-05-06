@@ -1,21 +1,31 @@
 <template>
-    <div>
-        <p> A wonderful Quote!</p>
-    </div>                   
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default">
+            <div class="panel-body quote">
+                <slot>  </slot>
+
+            </div>
+
+        </div>
+    
+    </div>  
     
 </template>
-
 <script>
 export default {
-
+    
 }
 </script>
-
-<style scoped>
-div{
-  border:  1px solid red ;
-  box-shadow: 1px 1px 2px black;
-  padding :30px;
-  margin:auto;
-  }
+<style>
+    .panel-body{
+        font-family: 'Arizonia',cursive;
+        font-size: 24px;
+        color:red;
+        }
+        .quote{
+            cursor: pointer;
+        }
+        .quote:hover{
+            background-color: blue;
+        }
 </style>
